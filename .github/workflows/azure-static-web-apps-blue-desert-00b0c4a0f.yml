@@ -47,7 +47,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "blog"           # Path to your blog folder
-          output_location: "blog/out"     # Output directory where the build artifacts are located
+          output_location: "blog/.next"     # Output directory where the build artifacts are located
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
