@@ -5,7 +5,6 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/blog',
-  output: 'export', // Enable static export for the application
 };
 
 export default nextConfig;
